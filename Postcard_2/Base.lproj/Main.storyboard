@@ -13,6 +13,7 @@
                         <viewControllerLayoutGuide type="bottom" id="dUN-x8-nXo"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="DuT-YQ-qKV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SagradaFamilia.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="9ML-U0-7it">
@@ -55,6 +56,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Mel-P5-iqR"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="LiN-7E-NIh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rsb-K7-ATS">
@@ -76,7 +78,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6Z-3v-acq">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
                                 <state key="normal" title="Send Message">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -95,11 +97,20 @@
                             </imageView>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pr3-e6-oOa">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="23" y="72" width="326" height="67"/>
+                                    <rect key="frame" x="23" y="142" width="161" height="67"/>
+                                </variation>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b6U-Oq-klU">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="23" y="93" width="326" height="32"/>
                                 </variation>
                             </label>
                         </subviews>
@@ -111,6 +122,7 @@
                                 <exclude reference="h6Z-3v-acq"/>
                                 <exclude reference="2NS-rL-8PF"/>
                                 <exclude reference="Pr3-e6-oOa"/>
+                                <exclude reference="b6U-Oq-klU"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -120,6 +132,7 @@
                                 <include reference="h6Z-3v-acq"/>
                                 <include reference="2NS-rL-8PF"/>
                                 <include reference="Pr3-e6-oOa"/>
+                                <include reference="b6U-Oq-klU"/>
                             </mask>
                         </variation>
                     </view>
@@ -128,6 +141,7 @@
                         <outlet property="enterNameTextField" destination="rsb-K7-ATS" id="Ke4-Xj-8sM"/>
                         <outlet property="mailButton" destination="h6Z-3v-acq" id="cf1-7Z-Zq4"/>
                         <outlet property="messageLabel" destination="Pr3-e6-oOa" id="GCb-Vl-iRb"/>
+                        <outlet property="nameLabel" destination="b6U-Oq-klU" id="RwV-N9-9ti"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L7o-rw-Vg4" userLabel="First Responder" sceneMemberID="firstResponder"/>
